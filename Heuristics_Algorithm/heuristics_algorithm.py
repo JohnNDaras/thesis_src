@@ -369,7 +369,7 @@ class Heuristics_Algorithm:
 
     def verification(self):
         Prediction_probs, retainedPairs = [], []
-        maxsize = 1000
+        maxsize = 1000                    ############   εδω μπαίνει ένας μεγάλος αριθμός για το μέγεθος της ουράς ###############
         self.topKPairs = PriorityQueue(maxsize + 1)
         minimumWeight = -1
         targetId, totalDecisions, positiveDecisions, truePositiveDecisions = 0, 0, 0, 0
